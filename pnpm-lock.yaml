@@ -39,6 +39,9 @@ importers:
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
+      nuxt-api-party:
+        specifier: 2.0.8
+        version: 2.0.8(magicast@0.3.4)(openapi-typescript@6.7.6)(rollup@4.18.1)
       oxlint:
         specifier: ^0.2.15
         version: 0.2.18
@@ -3194,6 +3197,11 @@ packages:
     engines: {node: ^16.10.0 || >=18.0.0}
     hasBin: true
 
+  nuxt-api-party@2.0.8:
+    resolution: {integrity: sha512-fRsD/zr7BdJwUJ7ZA4duR7qDY16O+ZobmAJrnC8eyV2fhY56rqm/14vmi4QXnNqNxPPrdjVcEP4/2MkjeLx4GA==}
+    peerDependencies:
+      openapi-typescript: ^5 || ^6 || ^7
+
   nuxt@3.12.3:
     resolution: {integrity: sha512-Qdkc+ucWwFcKsiL/OTF87jbgyFSymwPRKiiu0mvzsd/RXTn4hGiBduAlF3f7Yy0F9pDjSj8XHKDSnHYsDzm6rA==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -3251,6 +3259,9 @@ packages:
   open@8.4.2:
     resolution: {integrity: sha512-7x81NCL719oNbsq/3mh+hVrAWmFuEYUqrq/Iw3kUzH8ReypT9QQ0BLoJS7/G9k6N81XjW4qHWtjWwe/9eLy1EQ==}
     engines: {node: '>=12'}
+
+  openapi-typescript-helpers@0.0.9:
+    resolution: {integrity: sha512-BO2TvIDAO/FPVKz1Nj2gy+pUOHfaoENdK5UP3H0Jbh0VXBf3dwYMs58ZwOjiezrbHA2LamdquoyQgahTPvIxGA==}
 
   openapi-typescript@6.7.6:
     resolution: {integrity: sha512-c/hfooPx+RBIOPM09GSxABOZhYPblDoyaGhqBkD/59vtpN21jEuWKDlM0KYTvqJVlSYjKs0tBcIdeXKChlSPtw==}
@@ -7913,6 +7924,22 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  nuxt-api-party@2.0.8(magicast@0.3.4)(openapi-typescript@6.7.6)(rollup@4.18.1):
+    dependencies:
+      '@nuxt/kit': 3.12.3(magicast@0.3.4)(rollup@4.18.1)
+      defu: 6.1.4
+      ofetch: 1.3.4
+      ohash: 1.1.3
+      openapi-typescript: 6.7.6
+      openapi-typescript-helpers: 0.0.9
+      pathe: 1.1.2
+      scule: 1.3.0
+      ufo: 1.5.4
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
+
   nuxt@3.12.3(@parcel/watcher@2.4.1)(@types/node@20.14.10)(eslint@8.57.0)(ioredis@5.4.1)(magicast@0.3.4)(optionator@0.9.4)(rollup@4.18.1)(terser@5.31.2)(typescript@5.5.3)(vite@5.3.3(@types/node@20.14.10)(terser@5.31.2))(vue-tsc@2.0.26(typescript@5.5.3)):
     dependencies:
       '@nuxt/devalue': 2.0.2
@@ -8067,6 +8094,8 @@ snapshots:
       define-lazy-prop: 2.0.0
       is-docker: 2.2.1
       is-wsl: 2.2.0
+
+  openapi-typescript-helpers@0.0.9: {}
 
   openapi-typescript@6.7.6:
     dependencies:
